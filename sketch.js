@@ -26,6 +26,7 @@ function draw() {
 
   for(let i = 0; i < bubbles.length; i++){
     fill(bubbles[i].r, bubbles[i].g, bubbles[i].b);
+    noStroke();
     ellipse(bubbles[i].x, bubbles[i].y, bubbles[i].w, bubbles[i].h);
 
     bubbles[i].x += bubbles[i].xspeed;
