@@ -1,3 +1,5 @@
+const NR_BUBBLES = 5;
+
 let x;
 let y;
 let r, g, b;
@@ -8,7 +10,7 @@ function setup() {
   createCanvas(1100, 600);
   bubbles = [];
 
-  for(let i = 0; i < 5; i++){
+  for(let i = 0; i < NR_BUBBLES; i++){
     x = random(0, width+1);
     y = random(0, height+1);
     r = random(0, 255);
